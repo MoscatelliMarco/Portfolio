@@ -3,21 +3,23 @@
     import Icon from '@iconify/svelte';
 
     let worksParentWidth = 0;
+    let worksParentHeight = 0;
     onMount(() => {
-        window.addEventListener('resize', getWorksParentWidth);
-        getWorksParentWidth()
+        window.addEventListener('resize', getWorksParentWidthHeight);
+        getWorksParentWidthHeight()
     });
 
-    function getWorksParentWidth () {
+    function getWorksParentWidthHeight () {
         const element = document.getElementById('works-parent');
         if (element) {
             worksParentWidth = element.clientWidth;
+            worksParentHeight = element.clientHeight;
         }
     }
 </script>
 
-<div class="absolute flex justify-center z-10 w-full bg-black py-48">
-    <div class="flex flex-col gap-8 w-full max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-2 md:mx-4 lg:mx-5 xl:mx-8">
+<div style="padding-top: {worksParentHeight * .2}px;" class="relative flex justify-center z-10 w-full bg-gradient-to-b from-black/0 via-15% via-black to-black">
+    <div class="relative z-20 flex flex-col gap-8 w-full max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-2 md:mx-4 lg:mx-5 xl:mx-8 py-48">
         <h2 class="text-6xl font-semibold text-white font-title">
             My works
         </h2>

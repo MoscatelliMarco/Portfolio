@@ -1,8 +1,7 @@
 <script>
     import { particlesInit } from '@tsparticles/svelte';
 	import { onMount } from 'svelte';
-	//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-	import { loadSlim } from '@tsparticles/slim'; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+	import { loadSlim } from '@tsparticles/slim';
 
 	let ParticlesComponent;
 
@@ -16,11 +15,11 @@
 		particles: {
             fullScreen: false,
 			color: {
-				value: '#BDBDBD'
+				value: '#7F7F7F'
 			},
 			links: {
 				enable: true,
-				color: '#BDBDBD'
+				color: '#7F7F7F'
 			},
 			move: {
 				enable: true

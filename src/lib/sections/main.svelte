@@ -1,5 +1,5 @@
 <script>
-    import MainParticles from "$lib/items/main_particles.svelte";
+    import Particles from "$lib/items/particles.svelte";
 </script>
 
 <div class="h-screen grid place-items-center relative overflow-hidden">
@@ -9,7 +9,7 @@
             Marco<br>Moscatelli
         </h1>
 
-        <h2 class="z-30 absolute top-neg-7 left-88 text-gray-1 leading-tight">
+        <h2 class="z-30 absolute top-neg-7 left-88 text-gray-3 leading-tight">
             Hi, I am a fullstack web developer and<br>AI pioneer based in Italy
         </h2>
 
@@ -19,7 +19,7 @@
 
     </div>
 
-   <MainParticles />
+   <Particles />
 
 
 </div>
