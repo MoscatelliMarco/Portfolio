@@ -24,6 +24,7 @@
 		"svelte": "^4.0.0"
 	},
 	"devDependencies": {
+		"@iconify/svelte": "^3.1.6",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/package": "^2.0.0",
@@ -38,5 +39,9 @@
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@tsparticles/slim": "^3.3.0",
+		"@tsparticles/svelte": "^3.0.0"
+	}
 }

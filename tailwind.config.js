@@ -20,10 +20,13 @@ export default {
       },
       spacing: {
         "neg-7": "-1.75rem",
-        "68": "17rem"
+        "88": "22rem"
       },
       lineHeight: {
-        "title": "0.67"
+        "title": "0.68"
+      },
+      fontSize: {
+        '10xl': '10.5rem',
       }
     },
   },

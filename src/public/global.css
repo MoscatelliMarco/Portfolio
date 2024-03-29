@@ -1,14 +1,5 @@
 /* TODO find a way to add this code without compromising the rest */
 
-/* p {
-    line-height: 1.4em !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    line-height: 1.2em !important;
-    letter-spacing: -0.01em !important;
-} */
-
 .text-gradient-primary {
     /* Define the gradient */
     background-image: linear-gradient(to right, #F21AB6, #E96138);
