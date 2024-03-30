@@ -16,7 +16,7 @@
     }
 </script>
 
-<footer id="footer"  style="padding-top: {footerHeight * .08}px;" class="relative z-10 w-full bg-gradient-to-t from-black/0 via-85% via-black to-black items-center">
+<footer id="footer"  style="padding-top: {footerHeight * .07}px;" class="relative z-10 w-full bg-gradient-to-t from-black/0 via-85% via-black to-black items-center">
     <div class="flex flex-col items-center gap-8 justify-center py-24">
         <h4 class="font-title text-3xl font-medium">
             Marco Moscatelli

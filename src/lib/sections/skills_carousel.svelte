@@ -11,7 +11,7 @@
         // swiper parameters
         const swiperParams = {
             autoplay: {
-                delay: 3000, // Auto play every n seconds
+                delay: 2500, // Auto play every n seconds
             },
             navigation: true,
             loop: true,
@@ -45,7 +45,7 @@
         </p>
     </div>
 
-    <swiper-container init="false" id="skills-carousel" class="mt-28">
+    <swiper-container init="false" id="skills-carousel" class="mt-28 max-w-5xl px-4">
         <swiper-slide class="flex justify-center">
             <div class="skills">
                 <Icon icon="skill-icons:html" class="w-full h-full"/>
