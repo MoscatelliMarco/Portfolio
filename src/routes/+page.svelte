@@ -3,7 +3,7 @@
     import MyWorks from "$lib/sections/my_works.svelte";
     import SkillsCarousel from "$lib/sections/skills_carousel.svelte";
     import ShowSourceCode from "$lib/sections/show_source_code.svelte";
-    import Price from "$lib/sections/price.svelte";
+    import Services from "$lib/sections/services.svelte";
     import Divider from "$lib/items/divider.svelte";
 </script>
 
@@ -17,7 +17,7 @@
 
 <Divider />
 
-<Price />
+<Services />
 
 <Divider />
 

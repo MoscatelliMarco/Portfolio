@@ -12,12 +12,3 @@
     /* Ensuring text is displayed */
     -webkit-text-fill-color: transparent; 
 }
-.bg-gradient-gray {
-    background: linear-gradient(150deg, #FFFFFF, #BDBDBD);
-}
-
-.center-absolute {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}

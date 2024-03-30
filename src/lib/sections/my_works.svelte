@@ -24,10 +24,10 @@
             My works
         </h2>
 
-        <div id="works-parent" class="flex flex-col gap-8">
+        <div id="works-parent" class="flex flex-col gap-8 text-black">
 
             <div class="flex justify-start">
-                <div style="width: calc({worksParentWidth}px - 20%);" class="bg-white rounded flex gap-6 p-6 h-72">
+                <div style="width: calc({worksParentWidth}px - 20%);" class="bg-gray-5 rounded flex gap-6 p-6 h-72">
                     <div class="w-72 flex flex-col justify-center items-center rounded bg-red-500 shrink-0">Immagine</div>
 
                     <div class="flex flex-col gap-2 pt-3 pb-2.5">
@@ -62,7 +62,7 @@
             </div>
 
             <div class="flex justify-end">
-                <div style="width: calc({worksParentWidth}px - 20%);" class="bg-white rounded flex gap-6 p-6 h-72">
+                <div style="width: calc({worksParentWidth}px - 20%);" class="bg-gray-5 rounded flex gap-6 p-6 h-72">
                     <div class="w-72 flex flex-col justify-center items-center rounded bg-red-500 shrink-0">Immagine</div>
 
                     <div class="flex flex-col gap-2 pt-3 pb-2.5">
@@ -97,7 +97,7 @@
             </div>
 
             <div class="flex justify-start">
-                <div style="width: calc({worksParentWidth}px - 20%);" class="bg-white rounded flex gap-6 p-6 h-72">
+                <div style="width: calc({worksParentWidth}px - 20%);" class="bg-gray-5 rounded flex gap-6 p-6 h-72">
                     <div class="w-72 flex flex-col justify-center items-center rounded bg-red-500 shrink-0">Immagine</div>
 
                     <div class="flex flex-col gap-2 pt-3 pb-2.5">
