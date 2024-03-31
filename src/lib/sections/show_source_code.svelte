@@ -5,11 +5,11 @@
 <div class="relative z-20 bg-black pt-40 pb-28 flex flex-col items-center gap-6">
 
     <div class="relative text-center">
-        <p class="hero glitch layers opacity-10 text-8xl z-10" data-text="透明性"><span>透明性</span></p>
-        <p class="font-title absolute text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-5xl w-80 text-gradient-primary z-20">Source Code</p>
+        <p class="hero glitch layers opacity-10 text-10xl z-10" data-text="透明性"><span>透明性</span></p>
+        <p class="font-title absolute text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-6xl w-80 mt-2 text-gradient-primary z-20 uppercase">Source Code</p>
     </div>
 
-    <p style="max-width: 340px;" class="text-gray-3 text-center font-title mt-6">
+    <p style="max-width: 340px;" class="text-gray-3 text-center">
         I am giving you the keys to my <span class="font-semibold">realm</span>, so you can see how deep the rabbit hole goes.
     </p>
 

@@ -6,7 +6,7 @@
     import "../public/global.css";
 </script>
 
-<div class="font-body flex flex-col justify-between bg-black text-white">
+<div class="font-body flex flex-col justify-between bg-black text-white min-h-screen">
 
     <NavBar />
 
