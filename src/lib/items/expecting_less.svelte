@@ -1,147 +1,44 @@
 <script>
-    // IMPORTANT in this version type=="select" is coded and supported but not shown in the final result for UI porpuse, might change in the future
     import { onMount } from "svelte";
 
     export let price;
 
     const options = [
         {
-            name: "Landing pages",
+            name: "Start from a template (per page)",
             type: "number",
-            price_unit: 70,
+            price_unit: 25,
             min: 0,
             max: 99
         },
         {
-            name: "Info pages (about, tos, privacy policy, etc...)",
+            name: "Use prebuild components (like Bootstrap, Material UI, etc...) (per page)",
             type: "number",
             price_unit: 15,
-            starting_price: 20,
             min: 0,
             max: 99
         },
         {
-            name: "Other pages",
+            name: "Design not responsive (per page)",
             type: "number",
-            price_unit: 50,
+            price_unit: 15,
             min: 0,
             max: 99
-        },
-        "DIVIDER",
-        {
-            name: "Few animations (slide + fade animations)",
-            type: "checkbox",
-            price: 30,
-            cancel: ["Some animations (all of few animations + button animations + basic animated carousels)", "Many animations (all of some animations + particles + complex animated carousels)"]
-        },
-        {
-            name: "Some animations (all of few animations + button animations + basic animated carousels)",
-            type: "checkbox",
-            price: 50,
-            cancel: ["Few animations (slide + fade animations)", "Many animations (all of some animations + particles + complex animated carousels)"]
-        },
-        {
-            name: "Many animations (all of some animations + particles + complex animated carousels)",
-            type: "checkbox",
-            price: 70,
-            cancel: ["Some animations (all of few animations + button animations + basic animated carousels)", "Few animations (slide + fade animations)"]
-        },
-        "DIVIDER",
-        {
-            name: "Admin dashboard",
-            type: "checkbox",
-            price: 70
-        },
-        {
-            name: "Perfomance graphs in admin dashboard",
-            type: "checkbox",
-            price: 50,
-            links: ["Admin dashboard"]
-        },
-        {
-            name: "Manage users in admin dashboard",
-            type: "checkbox",
-            price: 50,
-            links: ["Admin dashboard", "Accounts and authentication"]
-        },
-        {
-            name: "Blog editor in admin dashboard",
-            type: "checkbox",
-            price: 50,
-            links: ["Admin dashboard"]
-        },
-        "DIVIDER",
-        {
-            name: "Database integration",
-            type: "checkbox",
-            price: 60
-        },
-        {
-            name: "Accounts and authentication",
-            type: "checkbox",
-            price: 100,
-            links: ["Database integration"]
-        },
-        {
-            name: "Image and video management system (If you want images that can be changed from the UI of the website)",
-            type: "checkbox",
-            price: 80,
-            links: ["Database integration"]
-        },
-        {
-            name: "Stripe integration",
-            type: "checkbox",
-            price: 100,
-            links: ["Database integration"]
-        },
-        "DIVIDER",
-        {
-            name: "Automatic multilingual support (Google Translate)",
-            type: "checkbox",
-            price: 60,
-            cancel: ["Manual multilingual support"]
-        },
-        {
-            name: "Manual multilingual support",
-            type: "checkbox",
-            price: 100,
-            links: ["Database integration"],
-            cancel: ["Automatic multilingual support (Google Translate)"]
-        },
-        "DIVIDER",
-        {
-            name: "Google analytics",
-            type: "checkbox",
-            price: 50
-        },
-        {
-            name: "Deployment and domain configuration",
-            type: "checkbox",
-            price: 40
-        },
-        // {
-        //     name: "Amount of animations",
-        //     type: "select",
-        //     options: {
-        //         "None": 0,
-        //         "Few": 30,
-        //         "Some": 50,
-        //         "Many": 80
-        //     }
-        // },
+        }
     ]
 
+    // The difference from build your own website is that here operations are done with -1 instead of 1
     onMount(() => {
         for (let option of options) {
             const input = document.querySelector("#" + getId(option["name"]));
 
             if (option["type"] == "checkbox") {
                 if (input.checked) {
-                    $price += option["price"];
+                    $price += option["price"] * -1;
                 }
                 input.addEventListener("change", (event) => {
                     if (event.target.checked) {
-                        $price += option["price"];
+                        $price += option["price"] * -1;
 
                         if (option["links"]) {
                             for (let link_name of option["links"]) {
@@ -149,7 +46,7 @@
 
                                 if (!link.checked) {
                                     link.checked = true;
-                                    $price += findOptionByName(link_name)["price"];
+                                    $price += findOptionByName(link_name)["price"] * -1;
                                 }
                             }
                         }
@@ -158,7 +55,7 @@
                                 const cancel = document.querySelector("#" + getId(cancel_name));
                                 if (cancel.checked) {
                                     cancel.checked = false;
-                                    $price -= findOptionByName(cancel_name)["price"];
+                                    $price -= findOptionByName(cancel_name)["price"] * -1;
                                 }
                             }
                         }
@@ -169,11 +66,11 @@
                             const link = document.querySelector("#" + getId(link_obj["name"]));
                             if (link.checked) {
                                 link.checked = false;
-                                $price -= link_obj["price"];
+                                $price -= link_obj["price"] * -1;
                             }
                         }
 
-                        $price -= option["price"];
+                        $price -= option["price"] * -1;
                     }
                 })
             } else if (option["type"] == "select") {
@@ -181,9 +78,9 @@
                     const price_span = document.querySelector("#" + getId(option["name"]) + "_price");
                     price_span.innerHTML = "€" + event.target.value;
 
-                    $price += parseInt(event.target.value);
+                    $price += parseInt(event.target.value) * -1;
                     if (input.dataset.previous_value) {
-                        $price -= input.dataset.previous_value;
+                        $price -= input.dataset.previous_value * -1;
                     }
                     input.dataset.previous_value = event.target.value;
                 })
@@ -199,12 +96,12 @@
                         event.target.value = parseInt(event.target.value);
                     }
 
-                    $price += parseInt(event.target.value) * option["price_unit"];
+                    $price += parseInt(event.target.value) * option["price_unit"] * -1;
                     if (option["starting_price"] && event.target.value != "0" && input.dataset.previous_value == "0") {
-                        $price += option["starting_price"];
+                        $price += option["starting_price"] * -1;
                     }
                     if (input.dataset.previous_value) {
-                        $price -= parseInt(input.dataset.previous_value) * option["price_unit"];
+                        $price -= parseInt(input.dataset.previous_value) * option["price_unit"] * -1;
                     }
                     if (!parseInt(event.target.value)) {
                         $price = 0;
@@ -244,18 +141,18 @@
         return foundObjects;
     }
 </script>
-
-<div class="col-span-6 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">
-    <h4 class="text-2xl font-bold font-title text-gradient-primary w-fit">
-        Build your own
-    </h4>
-    <p class="text-5xl font-semibold">            
-        €{$price}
-    </p>
-    <p class="text-gray-2">
-        If you have something different in mind build your website here to clear any doubt about the price.
-    </p>
-    <ul class="flex flex-col gap-3 text-gray-1 mt-4 overflow-y-auto h-96 scrollable">
+  
+  <div class="col-span-5 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">
+      <h4 class="text-2xl font-bold font-title text-gradient-primary w-fit">
+          Want to pay less?
+      </h4>
+      <p class="text-5xl font-semibold">            
+          €{$price}
+      </p>
+      <p class="text-gray-2">
+          If the price is too high for your budget, there are some changes you can made to save money.
+      </p>
+      <ul class="flex flex-col gap-3 text-gray-1 mt-4 overflow-y-auto h-48 scrollable">
         {#each options as option}
             {#if option["type"] == "checkbox"}
                 <li class="flex gap-2">
@@ -274,7 +171,7 @@
                     </select>
                     <label class="text-gray-1" for="{getId(option["name"])}">{option["name"]} - <span class="font-medium" id="{getId(option["name"])}_price">€{option["options"][Object.keys(option['options'])[0]]}</span></label>
                 </li>
-            {:else if option["type"] == "number"}
+                {:else if option["type"] == "number"}
                 <li class="flex gap-2">
                     <input style="width: 2.375rem; font-size: 0.825rem;" data-previous_value="0" id="{getId(option["name"])}" class="mt-0.5 h-5 border-orange px-2 bg-gray-5 border-2 rounded-full focus:outline-none" type="number" value="0" min="{option["min"]}" max="{option["max"]}">
                     <label class="text-gray-1" for="{getId(option["name"])}">{option["name"]} -
@@ -284,66 +181,62 @@
                         <span class="font-medium">€{option["price_unit"]}<span class="font-normal">/unit</span></span>
                     </label>
                 </li>
-            {:else if option == "DIVIDER"}
-                <li>
-                    <div style="height: 1.5px;" class="bg-gradient-to-r from-transparent via-25% via-gray-4 to-transparent w-2/3 rounded-full my-0.5"></div>
-                </li>
             {/if}
         {/each}
-    </ul>
-</div>
-
-<style>
-    /* Checkbox flip animation */
+      </ul>
+  </div>
+  
+  <style>
+      /* Checkbox flip animation */
     .checkbox-span:before, .checkbox-span:after{
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    content: "";
-    position: absolute;
-    z-index: 1;
-    width: 1.25rem;
-    height: 1.25rem;
-    background: transparent;
-    border: 2px solid #E96138;
-    border-radius: 9999px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 1.25rem;
+        height: 1.25rem;
+        background: transparent;
+        border: 2px solid #E96138;
+        border-radius: 9999px;
     }
     .checkbox-span:after {
-    z-index: 0;
-    border: none;
+        z-index: 0;
+        border: none;
     }
     .checkbox-flip:checked ~ .checkbox-span:before {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    background: linear-gradient(to right, #F21AB6, #E96138);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        background: linear-gradient(to right, #F21AB6, #E96138);
     }
-
+  
     /* Customizing the scrollbar */
     .scrollable::-webkit-scrollbar {
-    width: 6px; /* Set the width of the scrollbar */
+      width: 6px; /* Set the width of the scrollbar */
     }
-
+  
     /* Styling the scrollbar track */
     .scrollable::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Set the color of the scrollbar track */
-    border-radius: 10px; /* Set the border radius to make it rounded */
+        background-color: #f1f1f1; /* Set the color of the scrollbar track */
+        border-radius: 10px; /* Set the border radius to make it rounded */
     }
-
+  
     /* Styling the scrollbar thumb */
     .scrollable::-webkit-scrollbar-thumb {
-    background-color: #BDBDBD; /* Set the color of the scrollbar thumb */
-    border-radius: 10px; /* Set the border radius to make it rounded */
+        background-color: #BDBDBD; /* Set the color of the scrollbar thumb */
+        border-radius: 10px; /* Set the border radius to make it rounded */
     }
-
+  
     /* Hide the scrollbar buttons (arrows) */
     .scrollable::-webkit-scrollbar-button {
-    display: none;
+        display: none;
     }
 
-    /* Style the arrow */
+      /* Style the arrow */
     input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
         -webkit-appearance: none;
         appearance: none;

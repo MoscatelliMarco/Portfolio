@@ -31,8 +31,12 @@
             <div style="height: 2px;" class="w-full max-w-xl mx-4 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
         </div>
         <div class="flex gap-2">
-            <Icon icon="bxl:github" class="text-gray-3 h-8 w-8 backdrop-blur-sm p-1 rounded"/>
-            <Icon icon="bxl:gmail" class="text-gray-3 h-8 w-8 backdrop-blur-sm p-1 rounded" />
+            <a target="_blank" href="https://github.com/MoscatelliMarco">
+                <Icon icon="bxl:github" class="text-gray-3 h-8 w-8 backdrop-blur-sm p-1 rounded"/>
+            </a>
+            <a href="mailto:info@marcomoscatelli.com">
+                <Icon icon="bxl:gmail" class="text-gray-3 h-8 w-8 backdrop-blur-sm p-1 rounded" />
+            </a>
         </div>
     </div>
 </footer>

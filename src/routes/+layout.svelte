@@ -10,7 +10,7 @@
 
     <NavBar />
 
-    <body>
+    <body class="overflow-x-hidden">
         <slot></slot>
     </body>
 

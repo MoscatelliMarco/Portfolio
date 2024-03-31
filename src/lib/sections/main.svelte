@@ -9,7 +9,7 @@
             Marco<br>Moscatelli
         </h1>
 
-        <h2 class="z-30 absolute top-neg-7 left-88 text-gray-3 leading-tight">
+        <h2 class="z-30 absolute top-neg-7 left-88 text-gray-3 leading-tight text-lg">
             Hi, I am a fullstack web developer and<br>AI pioneer based in Italy
         </h2>
 
