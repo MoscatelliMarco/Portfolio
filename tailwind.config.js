@@ -16,7 +16,7 @@ export default {
         "gray-4": "#D3D3D3",
         "gray-5": "#E0E0E0",
         "black": "#181818",
-        "white": "#FCFCFC"
+        "white": "#FAFAFA"
       },
       fontFamily: {
         "title": ["Cormorand Garamond", ...defaultTheme.fontFamily.serif],
