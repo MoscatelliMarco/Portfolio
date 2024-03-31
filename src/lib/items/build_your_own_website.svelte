@@ -133,7 +133,10 @@
 
     onMount(() => {
         for (let option of options) {
-            const input = document.querySelector("#" + getId(option["name"]));
+            let input;
+            if (option !== "DIVIDER") {
+                input = document.querySelector("#" + getId(option["name"]));
+            }
 
             if (option["type"] == "checkbox") {
                 if (input.checked) {
@@ -203,11 +206,11 @@
                     if (option["starting_price"] && event.target.value != "0" && input.dataset.previous_value == "0") {
                         $price += option["starting_price"];
                     }
+                    if (option["starting_price"] && event.target.value == "0" && input.dataset.previous_value != "0") {
+                        $price -= option["starting_price"];
+                    }
                     if (input.dataset.previous_value) {
                         $price -= parseInt(input.dataset.previous_value) * option["price_unit"];
-                    }
-                    if (!parseInt(event.target.value)) {
-                        $price = 0;
                     }
                     input.dataset.previous_value = event.target.value;
                 })
