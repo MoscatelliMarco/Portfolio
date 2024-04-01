@@ -22,7 +22,7 @@
 
 <Divider />
 
-<Contacts />
+<Contacts/>
 
 <Divider />
 

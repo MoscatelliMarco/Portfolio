@@ -24,7 +24,7 @@ export default {
       },
       spacing: {
         "neg-7": "-1.75rem",
-        "88": "22rem"
+        "90": "22.5rem"
       },
       lineHeight: {
         "title": "0.68"

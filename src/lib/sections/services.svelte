@@ -21,7 +21,7 @@
                 Blog
             </h4>
             <p class="text-5xl font-semibold">            
-                €600
+                €700
             </p>
             <p class="text-gray-2">
                 You think only on writing quality articles, I’ll take care of the rest ― Everything optimized with SEO to rank your articles at the top of Google rankings.
@@ -42,6 +42,10 @@
                 <li class="flex gap-3 items-start">
                     <Tick />
                     2 any other pages that you want
+                </li>
+                <li class="flex gap-3 items-start">
+                    <Tick />
+                    Few animations
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
@@ -83,10 +87,10 @@
                 Ecommerce
             </h4>
             <p class="text-5xl font-semibold">            
-                €3000
+                €1250
             </p>
             <p class="text-gray-2">
-                Shopify is not always the solution, it's expensive and difficult to customize, my ecommerce solution provides you with the right tools to increase your sales and your earnings.
+                Shopify is not always the solution, it's expensive and difficult to customize, my ecommerce solutions provides you with the right tools to increase your sales and your earnings.
             </p>
             <ul class="flex flex-col gap-3 text-gray-1 mt-2">
                 <li class="flex gap-3 items-start">
@@ -149,7 +153,7 @@
                 <span class="text-2xl text-gradient-primary font-bold mr-2">Portfolio website</span> (like this one)
             </h4>
             <p class="text-5xl font-semibold">            
-                €400
+                €350
             </p>
             <p class="text-gray-2">
                 A one page application developed to rocket your clients conversion rate with maniacally studied details and animations.

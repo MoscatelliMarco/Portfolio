@@ -3,6 +3,7 @@
     import { onMount } from "svelte";
     import { slide } from "svelte/transition";
     import Icon from "@iconify/svelte";
+    import { page } from "$app/stores";
 
     let name_error = "";
     let email_error = "";
@@ -74,6 +75,15 @@
             }
         }
     }
+
+    // After form store changes put it back remove the message after x milliseconds
+    let form_response = {}; // This is added because $page can't be overwritten manualy (discovered from testing)
+    $: if($page.form) {
+        form_response = {...$page.form};
+        setTimeout(() => {
+            form_response = {};
+        }, 8000)
+    }
 </script>
 
 <form use:enhance action="?/contact" method="POST" class="relative z-20 bg-black flex justify-center">
@@ -88,7 +98,7 @@
                 <label for="name" class="text-gray-2 text-sm uppercase">Name</label>
                 <input class="rounded-sm bg-gray-1 px-3 py-2 border border-gray-2" id="name" name="name" type="text">
                 {#if name_error}
-                    <div transition:slide={{duration: 200}} class="flex items-center gap-2 text-error pt-1">
+                    <div transition:slide={{duration: 200}} class="flex items-center gap-1.5 text-error pt-1">
                         <Icon icon="mdi:error-outline" class="h-5 w-5" />
                         <p class="font-medium">{name_error}</p>
                     </div>
@@ -98,7 +108,7 @@
                 <label for="email" class="text-gray-2 text-sm uppercase">Email</label>
                 <input class="rounded-sm bg-gray-1 px-3 py-2 border border-gray-2" id="email" name="email" type="text">
                 {#if email_error}
-                    <div transition:slide={{duration: 200}} class="flex items-center gap-2 text-error pt-1">
+                    <div transition:slide={{duration: 200}} class="flex items-center gap-1.5 text-error pt-1">
                         <Icon icon="mdi:error-outline" class="h-5 w-5" />
                         <p class="font-medium">{email_error}</p>
                     </div>
@@ -108,7 +118,7 @@
                 <label for="message" class="text-gray-2 text-sm uppercase">Message</label>
                 <textarea class="rounded-sm bg-gray-1 h-36 px-3 py-2 border border-gray-2" name="message" id="message"></textarea>
                 {#if message_error}
-                    <div transition:slide={{duration: 200}} class="flex items-center gap-2 text-error pt-1">
+                    <div transition:slide={{duration: 200}} class="flex items-center gap-1.5 text-error pt-1">
                         <Icon icon="mdi:error-outline" class="h-5 w-5" />
                         <p class="font-medium">{message_error}</p>
                     </div>
@@ -125,6 +135,17 @@
                 </button>
                 <button bind:this={submit_button_hidden} type="submit" class="hidden" aria-label="hidden"></button>
             </div>
+            {#if form_response?.error}
+                <div transition:slide={{duration: 200}} class="flex gap-1.5 text-error pt-1.5">
+                    <Icon icon="mdi:error-outline" class="h-5 w-5 mt-0.5" />
+                    <p class="font-medium">{@html $page.form?.error}</p>
+                </div>
+            {:else if form_response?.success}
+                <div transition:slide={{duration: 200}} class="flex items-center gap-2 text-info pt-1.5">
+                    <Icon icon="mdi:information-outline" class="h-5 w-5" />
+                    <p class="font-medium">Message sent</p>
+                </div>
+            {/if}
         </div>
     </div>
 </form>

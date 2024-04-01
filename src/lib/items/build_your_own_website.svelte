@@ -16,14 +16,14 @@
             name: "Info pages (about, tos, privacy policy, etc...)",
             type: "number",
             price_unit: 15,
-            starting_price: 20,
+            starting_price: 25,
             min: 0,
             max: 99
         },
         {
-            name: "Other pages",
+            name: "Other pages (error, product, listing pages, etc...)",
             type: "number",
-            price_unit: 50,
+            price_unit: 55,
             min: 0,
             max: 99
         },
@@ -62,13 +62,13 @@
             name: "Manage users in admin dashboard",
             type: "checkbox",
             price: 50,
-            links: ["Admin dashboard", "Accounts and authentication"]
+            links: ["Admin dashboard", "Accounts and authentication", "Database integration"]
         },
         {
             name: "Blog editor in admin dashboard",
             type: "checkbox",
             price: 50,
-            links: ["Admin dashboard"]
+            links: ["Admin dashboard", "Database integration"]
         },
         "DIVIDER",
         {
