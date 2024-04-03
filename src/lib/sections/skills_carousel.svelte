@@ -32,7 +32,7 @@
     });
 </script>
 
-<div class="relative z-20 py-64 bg-black">
+<div id="skills" class="relative z-20 py-64 bg-black">
     <h3 class="text-6xl font-semibold flex justify-center font-title">
         My skills
     </h3>
@@ -41,7 +41,7 @@
         <p class="text-center max-w-3xl mx-2">
             I can build and design websites fully customized with database access using frameworks like Sveltekit or Express, I will integrated them with AI if asked using Python and Pytorch, deploying them with distribution control system softwares like git on Linux or Vercel. For your AI models I will also scrape the web using Selenium and Scrapy.
             <br>
-            If you have any doubt don't hesitate to contact me (scroll below for the form).
+            If you have any doubt don't hesitate to <a href="#contact" class="text-white font-semibold hover:underline">contact me</a>.
         </p>
     </div>
 

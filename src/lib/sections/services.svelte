@@ -8,7 +8,7 @@
     let price = writable(0);
 </script>
 
-<div class="relative z-20 bg-black py-48 flex flex-col items-center gap-4">
+<div id="services" class="relative z-20 bg-black py-48 flex flex-col items-center gap-4">
     <h2 class="text-5xl font-title text-white font-semibold">
         Services
     </h2>
