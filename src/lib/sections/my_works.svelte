@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-    import Icon from '@iconify/svelte';
+    import Work from '$lib/items/work.svelte';
 
     let worksParentWidth = 0;
     let worksParentHeight = 0;
@@ -26,110 +26,9 @@
 
         <div id="works-parent" class="flex flex-col gap-8 text-black">
 
-            <div class="flex justify-start">
-                <div style="width: calc({worksParentWidth}px - 20%);" class="bg-gray-5 rounded flex gap-6 p-6 h-72">
-                    <div class="w-72 flex flex-col justify-center items-center rounded bg-red-500 shrink-0">Immagine</div>
-
-                    <div class="flex flex-col gap-2 pt-3 pb-2.5">
-                        <h3 class="font-semibold text-2xl">Titolo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio provident, sed mollitia deserunt cumque iusto ad eos facilis labore perferendis architecto aspernatur eum consectetur dignissimos, tempora doloremque inventore quibusdam! Mollitia.</p>
-                        
-                        <div class="mt-auto flex flex-col gap-1">
-                            <p class="text-gray-2 font-semibold text-sm">Skills used</p>
-                            <ul class="flex flex-wrap gap-2">
-                                <li>
-                                    <Icon icon="skill-icons:html" class="w-6 h-6"/>
-                                </li>
-                                <li>
-                                    <Icon icon="skill-icons:css" class="w-6 h-6"/>
-                                </li>
-                                <li>
-                                    <Icon icon="skill-icons:javascript" class="w-6 h-6"/>
-                                </li>
-                                <li>
-                                    <Icon icon="skill-icons:svelte" class="w-6 h-6"/>
-                                </li>
-                                <li>
-                                    <Icon icon="skill-icons:linux" class="w-6 h-6"/>
-                                </li>
-                                <li>
-                                    <Icon icon="skill-icons:figma" class="w-6 h-6"/>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex justify-end">
-                <div style="width: calc({worksParentWidth}px - 20%);" class="bg-gray-5 rounded flex gap-6 p-6 h-72">
-                    <div class="w-72 flex flex-col justify-center items-center rounded bg-red-500 shrink-0">Immagine</div>
-
-                    <div class="flex flex-col gap-2 pt-3 pb-2.5">
-                        <h3 class="font-semibold text-2xl">Titolo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio provident, sed mollitia deserunt cumque iusto ad eos facilis labore perferendis architecto aspernatur eum consectetur dignissimos, tempora doloremque inventore quibusdam! Mollitia.</p>
-                        
-                        <div class="mt-auto flex flex-col gap-1">
-                            <p class="text-gray-2 font-semibold text-sm">Skills used</p>
-                            <ul class="flex flex-wrap gap-2">
-                                <li>
-                                    <Icon icon="skill-icons:html" class="w-6 h-6"/>
-                                </li>
-                                <li>
-                                    <Icon icon="skill-icons:css" class="w-6 h-6"/>
-                                </li>
-                                <li>
-                                    <Icon icon="skill-icons:javascript" class="w-6 h-6"/>
-                                </li>
-                                <li>
-                                    <Icon icon="skill-icons:svelte" class="w-6 h-6"/>
-                                </li>
-                                <li>
-                                    <Icon icon="skill-icons:linux" class="w-6 h-6"/>
-                                </li>
-                                <li>
-                                    <Icon icon="skill-icons:figma" class="w-6 h-6"/>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex justify-start">
-                <div style="width: calc({worksParentWidth}px - 20%);" class="bg-gray-5 rounded flex gap-6 p-6 h-72">
-                    <div class="w-72 flex flex-col justify-center items-center rounded bg-red-500 shrink-0">Immagine</div>
-
-                    <div class="flex flex-col gap-2 pt-3 pb-2.5">
-                        <h3 class="font-semibold text-2xl">Titolo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio provident, sed mollitia deserunt cumque iusto ad eos facilis labore perferendis architecto aspernatur eum consectetur dignissimos, tempora doloremque inventore quibusdam! Mollitia.</p>
-                        
-                        <div class="mt-auto flex flex-col gap-1">
-                            <p class="text-gray-2 font-semibold text-sm">Skills used</p>
-                            <ul class="flex flex-wrap gap-2">
-                                <li>
-                                    <Icon icon="skill-icons:html" class="w-6 h-6"/>
-                                </li>
-                                <li>
-                                    <Icon icon="skill-icons:css" class="w-6 h-6"/>
-                                </li>
-                                <li>
-                                    <Icon icon="skill-icons:javascript" class="w-6 h-6"/>
-                                </li>
-                                <li>
-                                    <Icon icon="skill-icons:svelte" class="w-6 h-6"/>
-                                </li>
-                                <li>
-                                    <Icon icon="skill-icons:linux" class="w-6 h-6"/>
-                                </li>
-                                <li>
-                                    <Icon icon="skill-icons:figma" class="w-6 h-6"/>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Work image_url={"/gaetano_chianello.png"} skills_used={["html", "css", "javascript", "tailwindcss-light", "figma-light", "nodejs-light", "expressjs-light", "mongodb"]} parent_width={worksParentWidth} orientation="left"/>
+            <Work parent_width={worksParentWidth} orientation="right"/>
+            <Work parent_width={worksParentWidth} orientation="left"/>
 
         </div>
     </div>

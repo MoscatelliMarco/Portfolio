@@ -1506,6 +1506,10 @@ html{
   width: 100%;
 }
 
+.w-24{
+  width: 6rem;
+}
+
 .max-w-3xl{
   max-width: 48rem;
 }
@@ -1835,6 +1839,11 @@ html{
 
 .to-orange\/70{
   --tw-gradient-to: rgb(233 97 56 / 0.7) var(--tw-gradient-to-position);
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-1{
