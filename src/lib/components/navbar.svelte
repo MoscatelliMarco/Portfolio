@@ -24,13 +24,12 @@
 <style>
 
     .nav-on-scroll {
-        transition: background-color 500ms ease-in-out;
-        transition: border-color 80ms ease-in-out;
+        transition: background-color 250ms ease-in-out, border-color 100ms ease-in-out;
         background-color: transparent;
         border-color: transparent;
     }
     .nav-on-scroll.scrolled {
-        transition: border-color 500ms ease-in-out;
+        transition: border-color 500ms ease-in-out, background-color 250ms ease-in-out;
         background-color: rgba(59, 59, 59, 0.6);
         border-color: rgba(59, 59, 59);
     }
