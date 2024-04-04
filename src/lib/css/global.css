@@ -12,3 +12,28 @@
     /* Ensuring text is displayed */
     -webkit-text-fill-color: transparent; 
 }
+
+.work-card {
+    transition: filter 500ms ease-in-out;
+}
+.work-card .image-work {
+    transition: transform 400ms ease-out, filter 500ms ease-in-out;
+}
+.work-card:hover {
+    filter: brightness(1.05);
+}
+.work-card:hover .image-work {
+    transform: scale(1.1);
+    filter: brightness(1.08);
+}
+
+.work-modal {
+    display: hidden;
+    background-color: rgba(24, 24, 24, 0);
+    transition: background-color 200ms ease-in-out, backdrop-filter 200ms ease-in-out;
+}
+.work-modal.active {
+    display: block;
+    backdrop-filter: blur(4px);
+    background-color: rgba(24, 24, 24, 0.6);
+}

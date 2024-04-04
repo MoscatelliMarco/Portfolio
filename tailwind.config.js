@@ -10,7 +10,7 @@ export default {
       colors: {
         "pink": "#F21AB6",
         "orange": "#E96138",
-        "gray-1": "#3B3B3B",
+        "gray-1": "#404040",
         "gray-2": "#7F7F7F",
         "gray-3": "#BDBDBD",
         "gray-4": "#D3D3D3",
