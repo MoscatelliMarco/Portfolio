@@ -45,7 +45,7 @@
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
-                    Few animations
+                    Simple animations
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
@@ -77,7 +77,7 @@
                 </li>
                 <li class="flex gap-3 items-start">
                     <Cross />
-                    Stripe integration
+                    Payments integration
                 </li>
             </ul>
         </div>
@@ -90,9 +90,13 @@
                 €1250
             </p>
             <p class="text-gray-2">
-                Shopify is not always the solution, it's expensive and difficult to customize, my ecommerce solutions provides you with the right tools to increase your sales and your earnings.
+                Shopify is not always the solution, it's expensive and difficult to customize, my ecommerce solutions provides you with the right tools to increase your sales and your earnings. I have picked a better alternative, MedusaJS, the best open source ecommerce engine!
             </p>
             <ul class="flex flex-col gap-3 text-gray-1 mt-2">
+                <li class="flex gap-3 items-start">
+                    <Tick />
+                    Migration from your Shopify store
+                </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
                     Landing page
@@ -107,23 +111,19 @@
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
-                    5 info pages
+                    6 info pages
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
-                    3 any other pages that you want
+                    4 other pages that you want
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
-                    Some animations
+                    Medium complexity animations
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
-                    Admin dashboard with perfomance graph
-                </li>
-                <li class="flex gap-3 items-start">
-                    <Tick />
-                    Admin dashboard to manage users
+                    Database connection
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
@@ -131,11 +131,11 @@
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
-                    Image and video management system
+                    <a class="underline" href="https://medusajs.com/" target="_blank">MedusaJS</a> configuration
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
-                    Google analytics
+                    Any type of payment method that you like (Stripe, Paypal, Clarna, even Manual)
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
@@ -169,7 +169,7 @@
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
-                    Many animations
+                    Complex animations
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />

@@ -1362,10 +1362,6 @@ html{
   top: 50%;
 }
 
-.top-2{
-  top: 0.5rem;
-}
-
 .top-22{
   top: 5.5rem;
 }
@@ -1376,10 +1372,6 @@ html{
 
 .top-3\.5{
   top: 0.875rem;
-}
-
-.top-16{
-  top: 4rem;
 }
 
 .z-10{
@@ -2072,11 +2064,6 @@ html{
   line-height: 1;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -2104,10 +2091,6 @@ html{
 
 .italic{
   font-style: italic;
-}
-
-.leading-tight{
-  line-height: 1.25;
 }
 
 .text-black{
@@ -2157,6 +2140,10 @@ html{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(250 250 250 / var(--tw-text-opacity));
+}
+
+.underline{
+  text-decoration-line: underline;
 }
 
 .opacity-0{

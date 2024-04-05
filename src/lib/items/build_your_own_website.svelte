@@ -8,43 +8,43 @@
         {
             name: "Landing pages",
             type: "number",
-            price_unit: 70,
+            price_unit: 80,
             min: 0,
             max: 99
         },
         {
             name: "Info pages (about, tos, privacy policy, etc...)",
             type: "number",
-            price_unit: 15,
-            starting_price: 25,
+            price_unit: 20,
+            starting_price: 35,
             min: 0,
             max: 99
         },
         {
             name: "Other pages (error, product, listing pages, etc...)",
             type: "number",
-            price_unit: 55,
+            price_unit: 65,
             min: 0,
             max: 99
         },
         "DIVIDER",
         {
-            name: "Few animations (slide + fade animations)",
+            name: "Simple animations",
             type: "checkbox",
             price: 30,
-            cancel: ["Some animations (all of few animations + button animations + basic animated carousels)", "Many animations (all of some animations + particles + complex animated carousels)"]
+            cancel: ["Complex animations", "Medium complexity animations"]
         },
         {
-            name: "Some animations (all of few animations + button animations + basic animated carousels)",
+            name: "Medium complexity animations",
             type: "checkbox",
             price: 50,
-            cancel: ["Few animations (slide + fade animations)", "Many animations (all of some animations + particles + complex animated carousels)"]
+            cancel: ["Simple animations", "Complex animations"]
         },
         {
-            name: "Many animations (all of some animations + particles + complex animated carousels)",
+            name: "Complex animations",
             type: "checkbox",
             price: 70,
-            cancel: ["Some animations (all of few animations + button animations + basic animated carousels)", "Few animations (slide + fade animations)"]
+            cancel: ["Simple animations", "Medium complexity animations"]
         },
         "DIVIDER",
         {
@@ -53,21 +53,9 @@
             price: 70
         },
         {
-            name: "Perfomance graphs in admin dashboard",
+            name: "Blog editor page in admin dashboard",
             type: "checkbox",
-            price: 50,
-            links: ["Admin dashboard"]
-        },
-        {
-            name: "Manage users in admin dashboard",
-            type: "checkbox",
-            price: 50,
-            links: ["Admin dashboard", "Accounts and authentication", "Database integration"]
-        },
-        {
-            name: "Blog editor in admin dashboard",
-            type: "checkbox",
-            price: 50,
+            price: 60,
             links: ["Admin dashboard", "Database integration"]
         },
         "DIVIDER",
