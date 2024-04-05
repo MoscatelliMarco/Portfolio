@@ -87,8 +87,8 @@
 </script>
 
 <form id="contact" use:enhance action="?/contact" method="POST" class="relative z-20 bg-black flex justify-center">
-    <div class="relative grid grid-cols-2 gap-12 w-full max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-2 md:mx-4 lg:mx-5 xl:mx-8 py-48">
-        <div class="flex flex-col sticky h-fit top-24 gap-3">
+    <div class="relative grid grid-cols-2 gap-12 w-full max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-2 md:mx-4 lg:mx-5 xl:mx-8 py-52">
+        <div class="flex flex-col sticky h-fit top-22 gap-3">
             <h5 class="text-4xl font-semibold font-title">Any doubt?</h5>
             <p class="text-gray-3">Do you have any special requests? Not sure if I am the right person? Or maybe you just want to be sure about the price? Don't hesitate to contact me to clear any doubt.</p>
         </div>

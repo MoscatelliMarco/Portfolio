@@ -2,7 +2,7 @@
 
 </script>
 
-<div class="relative z-20 bg-black pt-40 pb-28 flex flex-col items-center gap-6">
+<div class="relative z-20 bg-black pt-48 pb-28 flex flex-col items-center gap-6">
 
     <div class="relative text-center">
         <p class="hero glitch layers opacity-10 text-10xl z-10" data-text="透明性"><span>透明性</span></p>

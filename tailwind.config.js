@@ -23,7 +23,7 @@ export default {
         "body": ["Inter", ...defaultTheme.fontFamily.sans]
       },
       spacing: {
-        "neg-7": "-1.75rem",
+        "22" : "5.5rem",
         "90": "22.5rem"
       },
       lineHeight: {
