@@ -279,7 +279,7 @@
                 </li>
             {:else if option["type"] == "number"}
                 <li class="flex gap-2">
-                    <input style="width: 2.375rem; font-size: 0.825rem;" data-previous_value="0" id="{getId(option["name"])}" class="mt-0.5 h-5 border-orange px-2 bg-gray-5 border-2 rounded-full focus:outline-none" type="number" value="0" min="{option["min"]}" max="{option["max"]}">
+                    <input style="width: 2.375rem; font-size: 0.825rem;" data-previous_value="0" id="{getId(option["name"])}" class="mt-0.5 h-5 border-orange px-2 bg-gray-5 border-2 rounded-full focus:outline-none" type="text" value="0">
                     <label class="text-gray-1" for="{getId(option["name"])}">{option["name"]} -
                         {#if option["starting_price"]}
                             <span class="font-medium">€{option["starting_price"]}</span> + 
@@ -344,11 +344,5 @@
     /* Hide the scrollbar buttons (arrows) */
     .scrollable::-webkit-scrollbar-button {
     display: none;
-    }
-
-    /* Style the arrow */
-    input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        appearance: none;
     }
 </style>

@@ -25,9 +25,9 @@
         <div class="flex flex-col items-center gap-4 w-full backdrop-blur-sm">
             <div style="height: 2px;" class="w-full max-w-xl mx-4 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
             <ul class="flex gap-16 text-gray-3 text-sm font-medium">
-                <a href="#">Home</a>
-                <a href="#">Works</a>
-                <a href="#">Contact me</a>
+                <a href="#works">Works</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
             </ul>
             <div style="height: 2px;" class="w-full max-w-xl mx-4 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
         </div>
