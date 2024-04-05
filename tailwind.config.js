@@ -26,9 +26,6 @@ export default {
         "22" : "5.5rem",
         "90": "22.5rem"
       },
-      lineHeight: {
-        "title": "0.68"
-      },
       fontSize: {
         '10xl': '10.5rem',
       }
