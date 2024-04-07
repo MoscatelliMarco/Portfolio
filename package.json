@@ -3,11 +3,8 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build && npm run package",
-		"preview": "vite preview",
-		"package": "svelte-kit sync && svelte-package && publint",
-		"prepublishOnly": "npm run package",
-		"build-css": "npx tailwindcss -i ./src/tailwind.css -o ./src/lib/css/app.css --watch"
+		"build": "vite build",
+		"preview": "vite preview"
 	},
 	"exports": {
 		".": {
@@ -29,7 +26,8 @@
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/package": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
-		"daisyui": "^4.7.2",
+		"autoprefixer": "^10.4.19",
+		"postcss": "^8.4.38",
 		"publint": "^0.1.9",
 		"svelte": "^4.2.7",
 		"tailwindcss": "^3.4.1",
