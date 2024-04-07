@@ -142,7 +142,7 @@
     }
 </script>
   
-  <div class="col-span-5 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">
+  <div class="col-span-12 lg:col-span-5 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">
       <h4 class="text-2xl font-bold font-title text-gradient-primary w-fit">
           Want to pay less?
       </h4>

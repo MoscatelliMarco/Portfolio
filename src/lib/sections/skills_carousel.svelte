@@ -32,13 +32,13 @@
     });
 </script>
 
-<div id="skills" class="relative z-20 py-52 bg-black">
+<div id="skills" class="relative z-20 py-52 bg-black mx-4">
     <h3 class="text-6xl font-semibold flex justify-center font-title">
         My skills
     </h3>
 
     <div class="flex justify-center mt-12">
-        <p class="text-center max-w-3xl mx-2 text-gray-4">
+        <p class="text-center max-w-3xl mx-4 text-gray-4">
             I can build and design websites fully customized with database access using frameworks like Sveltekit or Express, I will integrated them with AI if asked using Python and Pytorch, deploying them with distribution control system softwares like git on Linux or Vercel. For your AI models I will also scrape the web using Selenium and Scrapy.
             <br>
             If you have any doubt don't hesitate to 

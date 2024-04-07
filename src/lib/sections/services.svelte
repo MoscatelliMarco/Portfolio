@@ -15,8 +15,8 @@
 
     <p class="text-center text-sm text-gray-3">A cured list of all the services that I offer</p>
 
-    <div class="grid grid-cols-12 gap-4 w-full max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-2 md:mx-4 lg:mx-5 xl:mx-8 text-black mt-6">
-        <div class="col-span-5 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">
+    <div class="grid grid-cols-12 gap-4 section-box text-black mt-6">
+        <div class="col-span-12 lg:col-span-5 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">
             <h4 class="text-2xl font-bold font-title text-gradient-primary w-fit">
                 Blog
             </h4>
@@ -82,7 +82,7 @@
             </ul>
         </div>
 
-        <div class="col-span-7 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">
+        <div class="col-span-12 lg:col-span-7 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">
             <h4 class="text-2xl font-bold font-title text-gradient-primary w-fit">
                 Ecommerce
             </h4>
@@ -148,7 +148,7 @@
             </ul>
         </div>
 
-        <div class="col-span-6 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">
+        <div class="col-span-12 lg:col-span-6 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">
             <h4 class="font-title text-gray-2/70 w-fit">
                 <span class="text-2xl text-gradient-primary font-bold mr-2">Portfolio website</span> (like this one)
             </h4>
@@ -204,7 +204,7 @@
 
         <BuildYourOwnWebsite price={price}/>
 
-        <div class="col-span-7 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">
+        <div class="col-span-12 lg:col-span-7 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">
             <h4 class="text-2xl text-gradient-primary font-title font-bold w-fit">FREE EXTRAS</h4>
             <p class="text-gray-2">
                 Whether you want a blog, an ecommerce or any other type of website, there are some things that I take as granted to provide your with the best experience and results as possible. Let's get together and discuss about you vision.
