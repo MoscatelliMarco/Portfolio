@@ -35,14 +35,14 @@ export default {
     function ({ addUtilities }) {
       const newUtilities = {
         '.section-box': {
-            margin: "0 1rem 0 1rem",
+            padding: "0 1rem 0 1rem",
             maxWidth: "72rem",
             width: "100%",
             '@media (min-width: 768px)' : {
-              margin: "0 3rem 0 3rem",
+              padding: "0 3rem 0 3rem",
             },
             '@media (min-width: 1024px)' : {
-              margin: "0 4rem 0 4rem",
+              padding: "0 4rem 0 4rem",
             }
         },
       };
