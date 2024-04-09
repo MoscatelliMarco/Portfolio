@@ -4,6 +4,7 @@
     import { slide } from "svelte/transition";
     import Icon from "@iconify/svelte";
     import { page } from "$app/stores";
+  import Page from "../../routes/+page.svelte";
 
     let name_error = "";
     let email_error = "";
@@ -32,7 +33,6 @@
             clearTimeout(timer);
             timer = setTimeout(() => {validateInput(message.value, "message");}, delay);
         });
-
 
         submit_button.addEventListener("click", () => {
             validateInput(name.value, "name");
@@ -88,7 +88,7 @@
 
 <form id="contact" use:enhance action="?/contact" method="POST" class="relative z-20 bg-black flex justify-center">
     <div class="relative flex flex-col lg:flex-row gap-8 lg:gap-12 section-box py-52">
-        <div class="flex flex-col relative lg:sticky h-fit lg:top-22 gap-3 w-full lg:w-2/5 shrink-0">
+        <div id="sticky-js" class="flex flex-col relative lg:sticky h-fit lg:top-22 gap-3 w-full lg:w-2/5 shrink-0">
             <h5 class="text-4xl font-semibold font-title">Any doubt?</h5>
             <p class="text-gray-3">Do you have any special requests? Not sure if I am the right person? Or maybe you just want to be sure about the price? Don't hesitate to contact me to clear any doubt.</p>
         </div>
