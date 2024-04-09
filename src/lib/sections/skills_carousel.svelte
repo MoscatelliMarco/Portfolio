@@ -32,7 +32,7 @@
     });
 </script>
 
-<div id="skills" class="relative z-20 py-52 bg-black">
+<div id="skills" class="relative z-20 py-52 bg-black flex flex-col items-center">
     <h3 class="text-6xl font-semibold flex justify-center font-title section-box">
         My skills
     </h3>
