@@ -32,10 +32,29 @@
             parent_width={worksParentWidth} 
             orientation="left"
             title="Gaetano Chianello",
-            brief_description="Gaetano Chianello is a personal trainer who needed a website to show his abilities, this website includes dynamic pages, an option to select different languages, and a connection to MongoDB."
+            description="Gaetano Chianello is a personal trainer who needed a website to show his abilities, this website includes dynamic pages, an option to select different languages, and a connection to MongoDB."
+            url="https://gaetanochianello.com"
             />
-            <Work parent_width={worksParentWidth} orientation="right"/>
-            <Work parent_width={worksParentWidth} orientation="left"/>
+            <Work 
+            image_url="/sensopinion.png"
+            skills_used={["html", "css", "javascript", "svelte", "vite-light", "tailwindcss-light", "figma-light", "nodejs-light", "python-light", "fastapi", "mongodb"]} 
+            parent_width={worksParentWidth} 
+            orientation="right"
+            title="Sensopinion",
+            description="Sensopinion is a news sentiment analyzer that scrapes the web for news where it analyses the emotions, it also provides a screener where you can sort, filter and search the most trending news of the time."
+            url="https://sensopinion.vercel.app/"
+            source_code="https://github.com/MoscatelliMarco/Sensopinion"
+            />
+            <Work 
+            image_url="/webscrap.png"
+            skills_used={["html", "css", "javascript", "selenium"]} 
+            parent_width={worksParentWidth} 
+            orientation="left"
+            title="Webscrap Serie A",
+            description="A repository that is your go-to resource for scraping football match data from Serie A, Italy's premier football league. On my Github you'll find many other web scraping project starting with the prefix &quot;WebScrap&quot;"
+            url="https://github.com/MoscatelliMarco/WebScrap-SerieA"
+            source_code="https://github.com/MoscatelliMarco/WebScrap-SerieA"
+            />
 
         </div>
     </div>

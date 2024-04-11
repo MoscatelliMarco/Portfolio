@@ -27,17 +27,6 @@
     filter: brightness(1.08);
 }
 
-.work-modal {
-    display: hidden;
-    background-color: rgba(24, 24, 24, 0);
-    transition: background-color 200ms ease-in-out, backdrop-filter 200ms ease-in-out;
-}
-.work-modal.active {
-    display: block;
-    backdrop-filter: blur(4px);
-    background-color: rgba(24, 24, 24, 0.6);
-}
-
 /* Scrollbar style */
 ::-webkit-scrollbar {
     width: 8px;
