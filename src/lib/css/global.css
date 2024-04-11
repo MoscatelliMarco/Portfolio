@@ -37,3 +37,15 @@
     backdrop-filter: blur(4px);
     background-color: rgba(24, 24, 24, 0.6);
 }
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: #181818;
+}
+::-webkit-scrollbar-thumb {
+    background: #2B2B2B;
+    border-radius: 9999px;
+}
