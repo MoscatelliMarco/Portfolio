@@ -24,7 +24,7 @@
     })
 </script>
 
-<div class="font-body flex flex-col justify-between bg-black text-white min-h-screen">
+<div class="font-body flex flex-col justify-between bg-black text-white min-h-screen overflow-x-hidden md:overflow-x-visible">
 
     <NavBar />
 

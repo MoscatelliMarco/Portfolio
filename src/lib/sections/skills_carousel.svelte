@@ -17,11 +17,16 @@
             loop: true,
             freeMode: true,
             centeredSlides: true,
-            slidesPerView: 5,
+            slidesPerView: 3,
             navigation: {
                 nextEl: null,
                 prevEl: null,
             },
+            breakpoints: {
+                768: {
+                    slidesPerView: 5
+                }
+            }
         };
 
         // now we need to assign all parameters to Swiper element
