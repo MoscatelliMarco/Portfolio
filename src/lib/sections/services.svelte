@@ -131,7 +131,7 @@
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
-                    <a class="underline" href="https://medusajs.com/" target="_blank">MedusaJS</a> configuration
+                    <p><a class="underline" href="https://medusajs.com/" target="_blank">MedusaJS</a> configuration</p>
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
