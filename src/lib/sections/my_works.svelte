@@ -18,7 +18,7 @@
     }
 </script>
 
-<div id="works" style="padding-top: {worksParentHeight * .1}px; margin-top: -{worksParentHeight * .09}px;" class="relative flex justify-center z-30 w-full bg-gradient-to-b from-black/0 via-[20%] md:via-[8%] lg:via-10% via-black to-black">
+<div id="works" class="relative flex justify-center z-30 w-full bg-gradient-to-b from-black/0 pt-[40vh] -mt-[25vh] md:pt-[12vh] md:-mt-[8vh] lg:pt-[15vh] lg:-mt-[10vh] via-10% via-black to-black">
     <div class="relative z-20 flex flex-col gap-8 section-box py-52">
         <h2 class="text-6xl font-semibold text-white font-title">
             My works
