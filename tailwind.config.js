@@ -53,6 +53,7 @@ export default {
       // Add the new custom utilities
       addUtilities(newUtilities, ['responsive', 'hover']);
     },
+    require('daisyui')
   ]
 }
 
