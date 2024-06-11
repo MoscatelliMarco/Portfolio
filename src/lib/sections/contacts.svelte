@@ -96,7 +96,7 @@
         <div class="flex flex-col gap-4 w-full">
             <div class="flex flex-col gap-0.5">
                 <label for="name" class="text-gray-2 text-sm uppercase">Name</label>
-                <input class="rounded-sm bg-gray-1 px-3 py-2 border border-gray-2" id="name" name="name" type="text">
+                <input class="focus:outline-none focus:border-orange/50 rounded-sm bg-gray-1 px-3 py-2 border border-gray-2" id="name" name="name" type="text">
                 {#if name_error}
                     <div transition:slide={{duration: 200}} class="flex items-center gap-1.5 text-error pt-1">
                         <Icon icon="mdi:error-outline" class="h-5 w-5" />
@@ -106,7 +106,7 @@
             </div>
             <div class="flex flex-col gap-0.5">
                 <label for="email" class="text-gray-2 text-sm uppercase">Email</label>
-                <input class="rounded-sm bg-gray-1 px-3 py-2 border border-gray-2" id="email" name="email" type="text">
+                <input class="focus:outline-none focus:border-orange/50 rounded-sm bg-gray-1 px-3 py-2 border border-gray-2" id="email" name="email" type="text">
                 {#if email_error}
                     <div transition:slide={{duration: 200}} class="flex items-center gap-1.5 text-error pt-1">
                         <Icon icon="mdi:error-outline" class="h-5 w-5" />
@@ -116,7 +116,7 @@
             </div>
             <div class="flex flex-col gap-0.5">
                 <label for="message" class="text-gray-2 text-sm uppercase">Message</label>
-                <textarea class="rounded-sm bg-gray-1 h-36 px-3 py-2 border border-gray-2" name="message" id="message"></textarea>
+                <textarea class="focus:outline-none focus:border-orange/50 rounded-sm bg-gray-1 h-36 px-3 py-2 border border-gray-2" name="message" id="message"></textarea>
                 {#if message_error}
                     <div transition:slide={{duration: 200}} class="flex items-center gap-1.5 text-error pt-1">
                         <Icon icon="mdi:error-outline" class="h-5 w-5" />
@@ -125,9 +125,9 @@
                 {/if}
             </div>
             <div class="flex flex-col sm:flex-row justify-between gap-4 items-start sm:items-center mt-4">
-                <a href="mailto:info@marcomoscatelli.com" class="flex gap-1 items-center text-gray-3 hover:text-gray-4 font-medium">
-                    <Icon icon="ic:round-email" class="h-5 w-5"/>
-                    <p>info@marcomoscatelli.com</p>
+                <a href="mailto:info@marcomoscatelli.com" class="flex gap-1 md:gap-1.5 items-center text-gray-3 hover:text-gray-4 font-medium">
+                    <Icon icon="ic:round-email" class="h-5 w-4 md:h-5 md:w-5"/>
+                    <p class="text-sm md:text-base">info@marcomoscatelli.com</p>
                 </a>
                 <button  bind:this={submit_button} type="button" class="w-full sm:w-auto justify-center px-28 lg:px-16 xl:px-20 bg-gradient-to-r from-pink/80 to-orange/80 hover:from-pink/90 hover:to-orange/90 py-2 rounded-sm flex gap-1 items-center border border-white font-medium">
                     Send
