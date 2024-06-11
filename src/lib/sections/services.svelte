@@ -13,7 +13,7 @@
         Services
     </h2>
 
-    <p class="text-center text-sm text-gray-3">A cured list of all the services that I offer</p>
+    <p class="text-center text-sm text-gray-3">A curated list of all the services that I offer</p>
 
     <div class="grid grid-cols-12 gap-4 section-box text-black mt-6">
         <div class="col-span-12 lg:col-span-5 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">

@@ -51,7 +51,7 @@
         </p>
     </div>
 
-    <swiper-container init="false" id="skills-carousel" class="mt-24 max-w-5xl px-4 section-box">
+    <swiper-container init="false" id="skills-carousel" class="mt-16 md:mt-20 max-w-5xl px-4 section-box">
         <swiper-slide class="flex justify-center">
             <div class="skills">
                 <Icon icon="skill-icons:html" class="w-full h-full"/>
