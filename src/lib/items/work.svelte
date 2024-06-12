@@ -15,7 +15,7 @@
 <div class="flex {orientation == "left" ? "justify-start" : "justify-end"}">
     <a href="{url}" target="_blank" style="width: calc({parent_width}px - {parent_width > 1024 ? "20%" : parent_width > 768 ? "10%" : "0px"});" 
         class="bg-gray-5 flex flex-col md:flex-row gap-5 lg:gap-6 p-6 min-h-80 work-card rounded text-start">
-        <div class="w-full md:w-72 h-96 md:h-full overflow-hidden shrink-0 rounded border border-gray-3">
+        <div class="w-full md:w-2/5 shrink-0 h-96 md:h-full overflow-hidden rounded border border-gray-3">
             <img src="{image_url}" class="w-full h-full object-cover rounded image-work" alt="portfolio project">
         </div>
 

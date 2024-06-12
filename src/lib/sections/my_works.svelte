@@ -64,6 +64,15 @@
             url="https://github.com/MoscatelliMarco/WebScrap-SerieA"
             source_code="https://github.com/MoscatelliMarco/WebScrap-SerieA"
             />
+            <Work 
+            image_url="/musico_marketplace.png"
+            skills_used={["figma-light", "photoshop"]}
+            parent_width={worksParentWidth}
+            orientation="left"
+            title="Musico - NFT Marketplace"
+            description="The Musico NFT Marketplace design in Figma showcases a sleek, modern interface using Glassmorphism. Translucent elements with frosted glass effects, soft shadows, and vibrant gradients create a sophisticated and immersive user experience."
+            url="https://www.figma.com/design/BWdZLdr2SSWqO1RVLBQeJk/Musico-NFT-marketplace"
+            />
 
         </div>
     </div>

@@ -204,7 +204,7 @@
 
         <BuildYourOwnWebsite price={price}/>
 
-        <div class="col-span-12 lg:col-span-7 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">
+        <div class="order-last lg:order-none col-span-12 lg:col-span-7 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">
             <h4 class="text-2xl text-gradient-primary font-title font-bold w-fit">FREE EXTRAS</h4>
             <p class="text-gray-2">
                 Whether you want a blog, an ecommerce or any other type of website, there are some things that I take as granted to provide your with the best experience and results as possible. Let's get together and discuss about you vision.
@@ -248,5 +248,5 @@
         <ExpectingLess price={price}/>
     </div>
 
-    <p class="text-sm text-gray-2 text-center mt-2 max-w-md">*price may vary based on your requests, the price displayed is just a general guideline</p>
+    <p class="text-sm text-gray-2 text-center mt-2 max-w-md">price may vary based on your requests, the price displayed is just a general guideline</p>
 </div>
