@@ -1,15 +1,7 @@
 <script>
     import { particlesInit } from '@tsparticles/svelte';
-	import { onMount } from 'svelte';
 	import { loadSlim } from '@tsparticles/slim';
-
-	let ParticlesComponent;
-
-	onMount(async () => {
-		const module = await import('@tsparticles/svelte');
-
-		ParticlesComponent = module.default;
-	});
+	import ParticlesComponent from '@tsparticles/svelte';
 
 	let particlesConfig = {
 		particles: {
