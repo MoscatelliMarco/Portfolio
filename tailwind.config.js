@@ -12,7 +12,7 @@ export default {
         "orange": "#E96138",
         "orange-dark": "#A02802",
         "gray-1": "#404040",
-        "gray-2": "#7F7F7F",
+        "gray-2": "#757575",
         "gray-3": "#BDBDBD",
         "gray-4": "#D3D3D3",
         "gray-5": "#E0E0E0",

@@ -7,21 +7,21 @@
         {
             name: "Start from a template (per page)",
             type: "number",
-            price_unit: 25,
+            price_unit: 15,
             min: 0,
             max: 99
         },
         {
             name: "Use prebuild components (like Bootstrap, Material UI, etc...) (per page)",
             type: "number",
-            price_unit: 15,
+            price_unit: 10,
             min: 0,
             max: 99
         },
         {
             name: "Design not responsive (per page)",
             type: "number",
-            price_unit: 15,
+            price_unit: 10,
             min: 0,
             max: 99
         }

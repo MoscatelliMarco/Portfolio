@@ -8,22 +8,22 @@
         {
             name: "Landing pages",
             type: "number",
-            price_unit: 80,
+            price_unit: 55,
             min: 0,
             max: 99
         },
         {
             name: "Info pages (about, tos, privacy policy, etc...)",
             type: "number",
-            price_unit: 20,
-            starting_price: 35,
+            price_unit: 15,
+            starting_price: 30,
             min: 0,
             max: 99
         },
         {
             name: "Other pages (error, product, listing pages, etc...)",
             type: "number",
-            price_unit: 65,
+            price_unit: 45,
             min: 0,
             max: 99
         },
@@ -31,68 +31,68 @@
         {
             name: "Simple animations",
             type: "checkbox",
-            price: 30,
+            price: 25,
             cancel: ["Complex animations", "Medium complexity animations"]
         },
         {
             name: "Medium complexity animations",
             type: "checkbox",
-            price: 50,
+            price: 40,
             cancel: ["Simple animations", "Complex animations"]
         },
         {
             name: "Complex animations",
             type: "checkbox",
-            price: 70,
+            price: 50,
             cancel: ["Simple animations", "Medium complexity animations"]
         },
         "DIVIDER",
         {
             name: "Admin dashboard",
             type: "checkbox",
-            price: 70
+            price: 60
         },
         {
             name: "Blog editor page in admin dashboard",
             type: "checkbox",
-            price: 60,
+            price: 50,
             links: ["Admin dashboard", "Database integration"]
         },
         "DIVIDER",
         {
             name: "Database integration",
             type: "checkbox",
-            price: 60
+            price: 40
         },
         {
             name: "Accounts and authentication",
             type: "checkbox",
-            price: 100,
+            price: 50,
             links: ["Database integration"]
         },
         {
             name: "Image and video management system (If you want images that can be changed from the UI of the website)",
             type: "checkbox",
-            price: 80,
+            price: 50,
             links: ["Database integration"]
         },
         {
             name: "Stripe integration",
             type: "checkbox",
-            price: 100,
+            price: 40,
             links: ["Database integration"]
         },
         "DIVIDER",
         {
             name: "Automatic multilingual support (Google Translate)",
             type: "checkbox",
-            price: 60,
+            price: 40,
             cancel: ["Manual multilingual support"]
         },
         {
             name: "Manual multilingual support",
             type: "checkbox",
-            price: 100,
+            price: 70,
             links: ["Database integration"],
             cancel: ["Automatic multilingual support (Google Translate)"]
         },
@@ -100,23 +100,13 @@
         {
             name: "Google analytics",
             type: "checkbox",
-            price: 50
+            price: 30
         },
         {
             name: "Deployment and domain configuration",
             type: "checkbox",
-            price: 40
-        },
-        // {
-        //     name: "Amount of animations",
-        //     type: "select",
-        //     options: {
-        //         "None": 0,
-        //         "Few": 30,
-        //         "Some": 50,
-        //         "Many": 80
-        //     }
-        // },
+            price: 30
+        }
     ]
 
     onMount(() => {

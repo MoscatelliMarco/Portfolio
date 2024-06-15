@@ -21,7 +21,7 @@
                 Blog
             </h4>
             <p class="text-5xl font-semibold">            
-                €700
+                €600
             </p>
             <p class="text-gray-2">
                 You think only on writing quality articles, I’ll take care of the rest ― Everything optimized with SEO to rank your articles at the top of Google rankings.
@@ -87,7 +87,7 @@
                 Ecommerce
             </h4>
             <p class="text-5xl font-semibold">            
-                €1250
+                €1100
             </p>
             <p class="text-gray-2">
                 Shopify is not always the solution, it's expensive and difficult to customize, my ecommerce solutions provides you with the right tools to increase your sales and your earnings. I have picked a better alternative, MedusaJS, the best open source ecommerce engine!
@@ -139,6 +139,14 @@
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
+                    Cart recovery logic
+                </li>
+                <li class="flex gap-3 items-start">
+                    <Tick />
+                    Google analytics
+                </li>
+                <li class="flex gap-3 items-start">
+                    <Tick />
                     Automatic multilingual support
                 </li>
                 <li class="flex gap-3 items-start">
@@ -153,7 +161,7 @@
                 <span class="text-2xl text-gradient-primary font-bold mr-2">Portfolio website</span> (like this one)
             </h4>
             <p class="text-5xl font-semibold">            
-                €350
+                €250
             </p>
             <p class="text-gray-2">
                 A one page application developed to rocket your clients conversion rate with maniacally studied details and animations.
@@ -210,6 +218,10 @@
                 Whether you want a blog, an ecommerce or any other type of website, there are some things that I take as granted to provide your with the best experience and results as possible. Let's get together and discuss about you vision.
             </p>
             <ul class="flex flex-col gap-3 text-gray-1 mt-2">
+                <li class="flex gap-3 items-start">
+                    <Tick />
+                    <p>Site respecting CCPA and GDPR (managed by <a aria-label="Iubenda" target="_blank" class="hover:underline visited:text-orange-dark text-orange-dark/90" href="https://www.iubenda.com">Iubenda</a>)</p>
+                </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
                     Optimized SEO
