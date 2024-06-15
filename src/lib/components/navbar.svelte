@@ -22,7 +22,7 @@
             <a href={$page.url.pathname == "/" ? "#services" : "/#services"}>Services</a>
         </div>
         <a href="#contact" class="bg-gradient-to-r from-pink/70 to-orange/70 border rounded-full px-4 py-1.5 text-sm">Contact</a>
-        <button class="block md:hidden hamburger-menu stroke-gray-4 {navbar_open ? "open" : ""}" onclick="navbar_mobile.showModal()" on:click={() => {navbar_open = !navbar_open;}}>
+        <button  aria-label="Close navbar menu" class="block md:hidden hamburger-menu stroke-gray-4 {navbar_open ? "open" : ""}" onclick="navbar_mobile.showModal()" on:click={() => {navbar_open = !navbar_open;}}>
             <svg class="w-9 h-9" viewBox="0 0 100 100">
               <path class="line top" d="M 20,30 H 80"/>
               <path class="line middle" d="M 20,50 H 80" />

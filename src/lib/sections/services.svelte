@@ -131,7 +131,7 @@
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
-                    <p><a target="_blank" class="hover:underline visited:text-orange-dark text-orange-dark/90" href="https://medusajs.com/">MedusaJS</a> configuration</p>
+                    <p><a aria-label="MedusaJS Headless Ecommerce Official Site" target="_blank" class="hover:underline visited:text-orange-dark text-orange-dark/90" href="https://medusajs.com/">MedusaJS</a> configuration</p>
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
@@ -220,7 +220,7 @@
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
-                    <p><a target="_blank" class="hover:underline visited:text-orange-dark text-orange-dark/90" href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">Lighthouse</a> optimized website</p>
+                    <p><a aria-label="Lighthouse Chrome Web Store" target="_blank" class="hover:underline visited:text-orange-dark text-orange-dark/90" href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">Lighthouse</a> optimized website</p>
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
