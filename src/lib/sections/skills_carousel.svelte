@@ -44,9 +44,7 @@
 
     <div class="flex justify-center mt-12 section-box">
         <p class="text-center max-w-3xl mx-4 text-gray-4">
-            I can build and design websites fully customized with database access using frameworks like Sveltekit or Express, I will integrated them with AI if asked using Python and Pytorch, deploying them with distribution control system softwares like git on Linux or Vercel. For your AI models I will also scrape the web using Selenium and Scrapy.
-            <br>
-            If you have any doubt don't hesitate to 
+            I can build and design websites fully customized with database access using frameworks like Sveltekit or Express, I will integrate them with AI if asked using Python and Pytorch, deploying them with distribution control system softwares like git on Linux or Vercel. For your AI models I will also scrape the web using Selenium and Scrapy. If you have any doubts, don't hesitate to 
             <a href="#contact" class="text-gray-4 font-semibold hover:underline">contact me</a>.
         </p>
     </div>
@@ -69,6 +67,11 @@
         </swiper-slide>
         <swiper-slide class="flex justify-center">
             <div class="skills">
+                <Icon icon="skill-icons:typescript" class="w-full h-full"/>
+            </div>
+        </swiper-slide>
+        <swiper-slide class="flex justify-center">
+            <div class="skills">
                 <Icon icon="skill-icons:tailwindcss-light" class="w-full h-full"/>
             </div>
         </swiper-slide>
@@ -80,6 +83,11 @@
         <swiper-slide class="flex justify-center">
             <div class="skills">
                 <Icon icon="skill-icons:svelte" class="w-full h-full"/>
+            </div>
+        </swiper-slide>
+        <swiper-slide class="flex justify-center">
+            <div class="skills">
+                <Icon icon="skill-icons:react-light" class="w-full h-full"/>
             </div>
         </swiper-slide>
         <swiper-slide class="flex justify-center">
@@ -100,6 +108,11 @@
         <swiper-slide class="flex justify-center">
             <div class="skills">
                 <Icon icon="skill-icons:mongodb" class="w-full h-full"/>
+            </div>
+        </swiper-slide>
+        <swiper-slide class="flex justify-center">
+            <div class="skills">
+                <Icon icon="skill-icons:postgresql-light" class="w-full h-full"/>
             </div>
         </swiper-slide>
         <swiper-slide class="flex justify-center">

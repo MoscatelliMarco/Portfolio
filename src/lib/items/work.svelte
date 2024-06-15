@@ -16,11 +16,11 @@
     <a href="{url}" target="_blank" style="width: calc({parent_width}px - {parent_width > 1024 ? "20%" : parent_width > 768 ? "10%" : "0px"});" 
         class="bg-gray-5 flex flex-col md:flex-row gap-5 lg:gap-6 p-6 min-h-80 work-card rounded text-start">
         <div class="w-full md:w-2/5 shrink-0 h-96 md:h-full overflow-hidden rounded border border-gray-3">
-            <img src="{image_url}" class="w-full h-full object-cover rounded image-work" alt="portfolio project">
+            <img src={image_url} class="w-full h-full object-cover rounded image-work" alt="portfolio project">
         </div>
 
         <div class="flex flex-col gap-1 px-1 pb-0.5 md:p-0 md:pt-2.5 md:pb-3 h-full">
-            <div class="flex gap-3 items-center">
+            <div class="flex gap-3.5 items-center">
                 <h3 class="font-semibold text-2xl">{title}</h3>
                 {#if source_code}
                     <a href="{source_code}" target="_blank" class="p-1 bg-white/60 rounded-full">

@@ -27,7 +27,7 @@
         <div id="works-parent" class="flex flex-col gap-8 text-black">
 
             <Work 
-            image_url="/gaetano_chianello.png"
+            image_url="/gaetano_chianello.webp"
             skills_used={["html", "css", "javascript", "tailwindcss-light", "figma-light", "nodejs-light", "expressjs-light", "mongodb"]} 
             parent_width={worksParentWidth} 
             orientation="left"
@@ -36,7 +36,7 @@
             url="https://gaetanochianello.com"
             />
             <Work 
-            image_url="/matteo_moscatelli.png"
+            image_url="/matteo_moscatelli.webp"
             skills_used={["html", "css", "javascript", "svelte", "tailwindcss-light", "figma-light", "photoshop", "nodejs-light", "mongodb"]} 
             parent_width={worksParentWidth} 
             orientation="right"
@@ -45,7 +45,7 @@
             url="https://matteo-moscatelli.vercel.app"
             />
             <Work 
-            image_url="/sensopinion.png"
+            image_url="/sensopinion.webp"
             skills_used={["html", "css", "javascript", "svelte", "tailwindcss-light", "figma-light", "nodejs-light", "python-light", "fastapi", "mongodb"]} 
             parent_width={worksParentWidth} 
             orientation="left"
@@ -55,7 +55,7 @@
             source_code="https://github.com/MoscatelliMarco/Sensopinion"
             />
             <Work 
-            image_url="/webscrap.png"
+            image_url="/webscrap.webp"
             skills_used={["html", "css", "javascript", "python-light", "selenium"]} 
             parent_width={worksParentWidth} 
             orientation="right"
@@ -65,7 +65,7 @@
             source_code="https://github.com/MoscatelliMarco/WebScrap-SerieA"
             />
             <Work 
-            image_url="/musico_marketplace.png"
+            image_url="/musico_marketplace.webp"
             skills_used={["figma-light", "photoshop"]}
             parent_width={worksParentWidth}
             orientation="left"
@@ -73,7 +73,16 @@
             description="The Musico NFT Marketplace design in Figma showcases a sleek, modern interface using Glassmorphism. Translucent elements with frosted glass effects, soft shadows, and vibrant gradients create a sophisticated and immersive user experience."
             url="https://www.figma.com/design/BWdZLdr2SSWqO1RVLBQeJk/Musico-NFT-marketplace"
             />
-
+            <Work 
+            image_url="/medusa_plugin_blogger.webp"
+            skills_used={["html", "css", "javascript", "typescript", "react-light", "expressjs-light", "postgresql-light"]}
+            parent_width={worksParentWidth}
+            orientation="right"
+            title="Medusa Plugin Blogger"
+            description="A blog integration for your MedusaJS admin page, enabling you to create and manage blog articles directly from the admin interface. This plugin extends the capabilities of MedusaJS, a powerful headless commerce platform, by adding a dedicated blogging feature."
+            url="https://github.com/MoscatelliMarco/medusa-plugin-blogger"
+            source_code="https://github.com/MoscatelliMarco/medusa-plugin-blogger"
+            />
         </div>
     </div>
 </div>
