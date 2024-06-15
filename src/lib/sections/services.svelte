@@ -131,7 +131,7 @@
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
-                    <p><a class="underline" href="https://medusajs.com/" target="_blank">MedusaJS</a> configuration</p>
+                    <p><a target="_blank" class="hover:underline visited:text-orange-dark text-orange-dark/90" href="https://medusajs.com/">MedusaJS</a> configuration</p>
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
@@ -217,6 +217,10 @@
                 <li class="flex gap-3 items-start">
                     <Tick />
                     Optimized performance
+                </li>
+                <li class="flex gap-3 items-start">
+                    <Tick />
+                    <p><a target="_blank" class="hover:underline visited:text-orange-dark text-orange-dark/90" href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">Lighthouse</a> optimized website</p>
                 </li>
                 <li class="flex gap-3 items-start">
                     <Tick />
