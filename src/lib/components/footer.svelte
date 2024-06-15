@@ -24,13 +24,13 @@
         <div class="flex flex-col items-center gap-4 w-full backdrop-blur-sm">
             <div style="height: 2px;" class="w-full max-w-xl mx-4 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
             <ul class="flex gap-16 text-gray-3 text-sm font-medium">
-                <a href="#works">Works</a>
-                <a href="#skills">Skills</a>
-                <a href="#services">Services</a>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
             </ul>
             <div style="height: 2px;" class="w-full max-w-xl mx-4 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
         </div>
-        <div class="flex gap-2">
+        <div class="flex gap-3">
             <a target="_blank" href="https://github.com/MoscatelliMarco">
                 <Icon icon="bxl:github" class="text-gray-3 h-8 w-8 backdrop-blur-sm p-1 rounded"/>
             </a>
