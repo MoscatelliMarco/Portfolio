@@ -4,11 +4,11 @@
     import { slide } from "svelte/transition";
     import Icon from "@iconify/svelte";
     import { page } from "$app/stores";
-  import Page from "../../routes/+page.svelte";
 
     let name_error = "";
     let email_error = "";
     let message_error = "";
+    let isSendLoading = false;
     let submit_button;
     let submit_button_hidden;
 
@@ -40,6 +40,7 @@
             validateInput(message.value, "message");
 
             if (!(name_error || email_error || message_error)) {
+                isSendLoading = true;
                 submit_button_hidden.click();
             }
         })
@@ -79,6 +80,7 @@
     // After form store changes put it back remove the message after x milliseconds
     let form_response = {}; // This is added because $page can't be overwritten manualy (discovered from testing)
     $: if($page.form) {
+        isSendLoading = false;
         form_response = {...$page.form};
         setTimeout(() => {
             form_response = {};
@@ -129,9 +131,16 @@
                     <Icon icon="ic:round-email" class="h-5 w-4 md:h-5 md:w-5"/>
                     <p class="text-sm md:text-base">info@marcomoscatelli.com</p>
                 </a>
-                <button  bind:this={submit_button} type="button" class="w-full sm:w-auto justify-center px-28 lg:px-16 xl:px-20 bg-gradient-to-r from-pink/80 to-orange/80 hover:from-pink/90 hover:to-orange/90 py-2 rounded-sm flex gap-1 items-center border border-white font-medium">
+                <button  bind:this={submit_button} type="button" class="w-full sm:w-auto justify-center px-28 lg:px-16 xl:px-20 bg-gradient-to-r from-pink/80 to-orange/80 hover:from-pink/90 hover:to-orange/90 py-2 rounded-sm flex items-center border border-white font-medium">
+                    {#if isSendLoading}
+                        <div transition:slide={{axis: "x", duration: 300}} class="overflow-hidden pr-2.5">
+                            <svg class="h-4 w-4 rotate object-cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...$$props}>
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4" d="M12 3C16.9706 3 21 7.02944 21 12" transform="rotate(360 12 12)" />
+                            </svg>
+                        </div>
+                    {/if}
                     Send
-                    <Icon icon="mingcute:send-fill" />
+                    <Icon icon="mingcute:send-fill" class="mt-0.5 ml-1" />
                 </button>
                 <button bind:this={submit_button_hidden} type="submit" class="hidden" aria-label="hidden"></button>
             </div>
@@ -149,3 +158,28 @@
         </div>
     </div>
 </form>
+
+<style>
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .rotate {
+        display: inline-block;
+        animation: rotate 1s linear infinite;
+    }
+
+    .slideIn {
+        transform: translateX(0%);
+        transition: transform 0.3s ease;
+    }
+    .slideOut {
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+</style>
