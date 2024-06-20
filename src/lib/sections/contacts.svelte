@@ -4,6 +4,7 @@
     import { slide } from "svelte/transition";
     import Icon from "@iconify/svelte";
     import { page } from "$app/stores";
+    import { Shine } from "svelte-ux";
 
     let name_error = "";
     let email_error = "";
@@ -131,17 +132,19 @@
                     <Icon icon="ic:round-email" class="h-5 w-4 md:h-5 md:w-5"/>
                     <p class="text-sm md:text-base">info@marcomoscatelli.com</p>
                 </a>
-                <button  bind:this={submit_button} type="button" class="w-full sm:w-auto justify-center px-28 lg:px-16 xl:px-20 bg-gradient-to-r from-pink/80 to-orange/80 hover:from-pink/90 hover:to-orange/90 py-2 rounded-sm flex items-center border border-white font-medium">
-                    {#if isSendLoading}
-                        <div transition:slide={{axis: "x", duration: 300}} class="overflow-hidden pr-2.5">
-                            <svg class="h-4 w-4 rotate object-cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...$$props}>
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4" d="M12 3C16.9706 3 21 7.02944 21 12" transform="rotate(360 12 12)" />
-                            </svg>
-                        </div>
-                    {/if}
-                    Send
-                    <Icon icon="mingcute:send-fill" class="mt-0.5 ml-1" />
-                </button>
+                <Shine lightRadius=250 depth=1 surfaceScale=2 specularConstant=0.35>
+                    <button  bind:this={submit_button} type="button" class="w-full sm:w-auto justify-center px-28 lg:px-16 xl:px-20 bg-gradient-to-r from-pink/80 to-orange/80 py-2 rounded-sm flex items-center border border-white font-medium">
+                        {#if isSendLoading}
+                            <div transition:slide={{axis: "x", duration: 300}} class="overflow-hidden pr-2.5">
+                                <svg class="h-4 w-4 rotate object-cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...$$props}>
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4" d="M12 3C16.9706 3 21 7.02944 21 12" transform="rotate(360 12 12)" />
+                                </svg>
+                            </div>
+                        {/if}
+                        Send
+                        <Icon icon="mingcute:send-fill" class="mt-0.5 ml-1" />
+                    </button>
+                </Shine>
                 <button bind:this={submit_button_hidden} type="submit" class="hidden" aria-label="hidden"></button>
             </div>
             {#if form_response?.error}

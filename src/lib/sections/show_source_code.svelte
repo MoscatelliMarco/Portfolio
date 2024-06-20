@@ -1,5 +1,5 @@
 <script>
-
+  import { Shine } from "svelte-ux";
 </script>
 
 <div class="relative z-20 bg-black pt-48 pb-28 flex flex-col items-center gap-6">
@@ -12,10 +12,11 @@
     <p style="max-width: 340px;" class="text-gray-3 text-center mt-1 md:mt-0">
         I am giving you the keys to my <span class="font-semibold">realm</span>, so you can see how deep the rabbit hole goes.
     </p>
-
-    <a href="https://github.com/MoscatelliMarco/Portfolio" target="_blank" class="border border-white text-white font-medium px-10 py-2 rounded-sm text-sm bg-gradient-to-r from-pink/50 to-orange/50 hover:from-pink/60 hover:to-orange/60">
+    <Shine lightRadius=200 depth=1.5 surfaceScale=2 specularConstant=0.4>
+      <a href="https://github.com/MoscatelliMarco/Portfolio" target="_blank" class="border border-white text-white font-medium px-10 py-2 rounded-sm text-sm bg-gradient-to-r from-pink/50 to-orange/50 mt-1">
         Show me
-    </a>
+      </a>
+  </Shine>
 
 </div>
 
