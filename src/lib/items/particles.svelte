@@ -27,7 +27,7 @@
 		const screenWidth = window.innerWidth;
 		const screenHeight = window.innerHeight;
 		const area = screenWidth * screenHeight;
-		console.log(area)
+		
 		// Calculate particle count based on screen area
 		// Galaxy NOTE 20 -> 376980
 		// Ipad 14.7 -> 874800
@@ -54,14 +54,14 @@
 		updateParticleCount();
 
 		const handleResize = () => {
-		updateParticleCount();
+			updateParticleCount();
 		};
 
 		window.addEventListener('resize', handleResize);
 
 		// Clean up the event listener on component unmount
 		return () => {
-		window.removeEventListener('resize', handleResize);
+			window.removeEventListener('resize', handleResize);
 		};
   	});
 </script>
