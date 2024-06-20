@@ -87,7 +87,7 @@
                 Ecommerce
             </h4>
             <p class="text-5xl font-semibold">            
-                €1100
+                €1300
             </p>
             <p class="text-gray-2">
                 Shopify is not always the solution, it's expensive and difficult to customize, my ecommerce solutions provides you with the right tools to increase your sales and your earnings. I have picked a better alternative, MedusaJS, the best open source ecommerce engine!
