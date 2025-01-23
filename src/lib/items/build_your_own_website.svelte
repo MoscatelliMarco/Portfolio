@@ -234,7 +234,7 @@
         €{$price}
     </p>
     <p class="text-gray-2">
-        If you have something different in mind build your website here to clear any doubt about the price.
+        If you have something different in mind, build your website here to clear any doubt about the price.
     </p>
     <ul class="flex flex-col gap-3 text-gray-1 mt-4 overflow-y-auto h-96 scrollable">
         {#each options as option}

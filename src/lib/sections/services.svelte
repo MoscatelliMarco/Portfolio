@@ -215,7 +215,7 @@
         <div class="order-last lg:order-none col-span-12 lg:col-span-7 bg-gray-5 rounded px-5 pt-5 pb-6 flex flex-col gap-3">
             <h4 class="text-2xl text-gradient-primary font-title font-bold w-fit">FREE EXTRAS</h4>
             <p class="text-gray-2">
-                Whether you want a blog, an ecommerce or any other type of website, there are some things that I take as granted to provide your with the best experience and results as possible. Let's get together and discuss about you vision.
+                Whether you want a blog, an ecommerce or any other type of website, there are some things that I take as granted to provide your with the best experience and results as possible. Let's get together and discuss about your vision.
             </p>
             <ul class="flex flex-col gap-3 text-gray-1 mt-2">
                 <li class="flex gap-3 items-start">

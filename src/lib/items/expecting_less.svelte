@@ -150,7 +150,7 @@
           €{$price}
       </p>
       <p class="text-gray-2">
-          If the price is too high for your budget, there are some changes you can made to save money.
+          If the price is too high for your budget, there are some changes you can make to save money.
       </p>
       <ul class="flex flex-col gap-3 text-gray-1 mt-4 overflow-y-auto h-48 scrollable">
         {#each options as option}
