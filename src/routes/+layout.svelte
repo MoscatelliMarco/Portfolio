@@ -7,6 +7,11 @@
 
     import { onMount } from "svelte";
     import { page } from "$app/stores";
+
+    import { dev } from '$app/environment';
+    import { injectAnalytics } from '@vercel/analytics/sveltekit'
+    injectAnalytics({ mode: dev ? 'development' : 'production' });
+
     let mounted = false;
     onMount(() => {
         mounted = true;
