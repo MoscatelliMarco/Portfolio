@@ -51,8 +51,8 @@
             orientation="left"
             title="Sensopinion",
             description="Sensopinion is a news sentiment analyzer that scrapes the web for news where it analyses the emotions, it also provides a screener where you can sort, filter and search the most trending news of the time."
-            url="https://sensopinion.vercel.app/"
-            source_code="https://github.com/MoscatelliMarco/Sensopinion"
+            url="https://sensopinionnews.vercel.app/"
+            source_code="https://github.com/MoscatelliMarco/SensopinionNews"
             />
             <Work 
             image_url="/webscrap.webp"
