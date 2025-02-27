@@ -59,9 +59,7 @@
     </body>
 
     <div class="mt-auto">
-
         <Footer />
-
     </div>
 
 </div>
